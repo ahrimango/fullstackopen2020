@@ -1,0 +1,12 @@
+note over browser:
+1. user input text then click submit button.
+end note
+
+note over browser:
+2. we push note data into notes array then
+call redrawNotes() rerender notes to display, then also call sendToServer(note) post
+note data to server in onsubmit event of submit button.
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: {"message":"note created"}
